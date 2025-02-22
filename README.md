@@ -2,7 +2,7 @@
 
 This is a simple action pages using Para, but it doens't work.
 
-Development
+##Development
 
 set the env variable in `.env.local`
 
@@ -10,7 +10,24 @@ set the env variable in `.env.local`
 PARA_API_KEY_BETA=<beta-api-key>
 ```
 
-### If you run, you will see the error below. which is due Sentry trying to use the file system.
+
+## Testing
+
+You will need to psot the following body to the endpoint:
+
+endpoint: `http://localhost:3000/api/send`
+
+```json
+{
+    "to": "0x1234567890123456789012345678901234567890",
+    "value": "1",
+    "contractAddress": "0x1234567890123456789012345678901234567890",
+    "serializedSession": "...",
+    "decimals": 18
+}
+```
+
+If you run, you will see the error below. which is due Sentry trying to use the file system.
 
 ```sh
 bun run preview

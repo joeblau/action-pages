@@ -3,7 +3,6 @@ import { z } from "zod";
 
 export const env = createEnv({
   server: {
-    PARA_ENVIRONMENT: z.enum(["BETA", "PROD"]),
     PARA_API_KEY_BETA: z.string().min(1),
   },
   client: {

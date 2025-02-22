@@ -2,4 +2,5 @@
 // by running `wrangler types --env-interface CloudflareEnv env.d.ts`
 
 interface CloudflareEnv {
+    PARA_API_KEY_BETA: string;
 }

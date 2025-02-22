@@ -13,9 +13,16 @@
 		"cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts"
 	},
 	"dependencies": {
+		"@getpara/evm-wallet-connectors": "^1.4.0",
+		"@getpara/react-sdk": "^1.4.0",
+		"@getpara/server-sdk": "^1.4.0",
+		"@getpara/viem-v2-integration": "^1.4.0",
+		"@t3-oss/env-nextjs": "^0.12.0",
+		"abitype": "^1.0.8",
 		"next": "15.1.6",
 		"react": "^19.0.0",
-		"react-dom": "^19.0.0"
+		"react-dom": "^19.0.0",
+		"zod": "^3.24.2"
 	},
 	"devDependencies": {
 		"@cloudflare/next-on-pages": "^1.13.8",

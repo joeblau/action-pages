@@ -28,12 +28,11 @@ const gasDefaults = {
 export const runtime = "edge";
 
 export async function POST(request: Request) {
-  const { to, value, contractAddress, chainId, serializedSession, decimals } =
+  const { to, value, contractAddress, serializedSession, decimals } =
     (await request.json()) as {
       to: string;
       value: string;
       contractAddress: string;
-      chainId: number;
       serializedSession: string;
       decimals: number;
     };

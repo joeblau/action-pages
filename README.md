@@ -1,6 +1,6 @@
 # Para + Cloudflare Pages
 
-This is a simple action pages using Para, but it doens't work.
+This is a simple cloudflare page using Para, but it doens't work.
 
 ##Development
 
